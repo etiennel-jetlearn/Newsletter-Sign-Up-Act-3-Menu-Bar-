@@ -1,0 +1,20 @@
+from tkinter import *
+
+#defining the window
+top = Tk()
+top.config(background="lightblue")
+top.geometry("400x200")
+top.title("Newsletter Sign-Up")
+
+#defining the labels
+labelnotice = Label(top,text="Subscribe to our Newsletter!",background="lightblue").place(x=80,y=20)
+user_email = Label(top,text="Email:").place(x=50,y=80)
+
+#defining the input boxes
+user_email_entry_box = Entry(top,width=35).place(x=100, y=80)
+
+#defining the submit button
+submit_button = Button(top,text="Subscribe",bd=5,background="white")
+submit_button.place(x=150,y=130)
+
+top.mainloop()
